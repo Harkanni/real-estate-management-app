@@ -14,17 +14,16 @@
    box-sizing: border-box;
 }
 
+
+
 @media screen and (max-width: 768px) {
    header {
       padding: 1.5rem !important;
-   }
-   .navList {
-      display: none;
-   }
-   .hamburger {
-      display: block;
-   }
+      height: 41rem !important;
+      /* display: none; */
+   }   
 }
+
 
 /* @media (prefers-color-scheme: dark) {
   :root {

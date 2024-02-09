@@ -23,5 +23,40 @@
    /* display: none; */
 }
 
+@media screen and (max-width: 768px) {
+   .banner {
+      width: 90vw !important;
+   }
+   .banner p {
+      font-size: .8rem;
+   }
+   .banner h1 {
+      font-size: 2rem;
+      line-height: 3rem;
+   }
+   .banner div {
+      padding: 0;
+   }
+   .banner input {
+      font-size: .8rem;
+      color: rgb(84, 79, 79);
+   }
+   .banner input::placeholder {
+      font-size: .8rem;
+   }
+   .banner .button {
+      padding: 0;
+   }
+   .navList {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 760px) {
+   .hamburger {
+      display: none !important;
+   }
+}
+
 
 
