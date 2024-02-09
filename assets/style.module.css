@@ -1,5 +1,19 @@
 .bgHero {
-   background: url('./images/hero-desktop.webp') no-repeat !important;
-   background-size: cover !important;
-   background-position: center !important;
+  background: url('./images/hero-desktop.webp') no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.logo00 {
+  box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.3) !important; /* Adjust values as needed */
+  /* display: none !important; */
+  overflow: hidden;
+}
+
+.textShadow {
+   text-shadow: 2px 1px 5px rgba(0,0,0,0.5);
+}
+
+.textInput {
+   outline: none;   
 }
