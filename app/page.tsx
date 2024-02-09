@@ -6,6 +6,8 @@ import { IoLogoMicrosoft } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Button } from "@mui/material";
 
+import { Evaluations } from '@/constants/index'
+
 export default function Home() {
    return (
       <main className="min-h-screen">
@@ -42,6 +44,10 @@ export default function Home() {
                <p>Introducing Simple SaleTM by HomeLight - Learn more »</p>
             </div>
          </MainComponentWrapper>
+         <Image
+            src={Evaluations[0].imgUrl}
+            alt=""
+         />
       </main>
    );
 }
