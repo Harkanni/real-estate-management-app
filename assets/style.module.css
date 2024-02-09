@@ -14,6 +14,11 @@
    text-shadow: 2px 1px 5px rgba(0,0,0,0.5);
 }
 
+.button {
+   padding-inline: 3rem;
+   padding-block: .8rem;
+}
+
 .textInput {
    outline: none;   
 }
@@ -35,7 +40,7 @@
       line-height: 3rem;
    }
    .banner div {
-      padding: 0;
+      padding: .5rem .5rem .5rem 1rem;
    }
    .banner input {
       font-size: .8rem;
@@ -45,7 +50,8 @@
       font-size: .8rem;
    }
    .banner .button {
-      padding: 0;
+      padding-inline: 1.5rem;
+      padding-block: .5rem;
    }
    .navList {
       display: none;
