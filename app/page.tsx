@@ -31,7 +31,11 @@ export default function Home() {
                   </div>
                   <p className={`${styles.textShadow} text-white`}>Get a real-world home value estimate in less than 2 minutes.</p>
                </div>
+
             </header>
+            <div className={`${styles.trademark} bg-slate-900 w-[100%]`}>
+               <p>Introducing Simple SaleTM by HomeLight - Learn more »</p>
+            </div>
          </MainComponentWrapper>
       </main>
    );

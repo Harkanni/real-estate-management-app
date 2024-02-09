@@ -17,3 +17,7 @@
 .textInput {
    outline: none;   
 }
+
+.trademark {
+   transform: translateY(-2rem);
+}
