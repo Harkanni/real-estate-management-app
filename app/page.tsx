@@ -3,23 +3,28 @@ import { hero } from '@/assets'
 import Image from "next/image";
 import styles from '@/assets/style.module.css'
 import { IoLogoMicrosoft } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { Button } from "@mui/material";
 
 export default function Home() {
    return (
       <main className="min-h-screen">
          <MainComponentWrapper>
-            <header className={`${styles.bgHero} min-h-[100vh] min-w-[100vw] px-16 py-5`}>
+            <header className={`${styles.bgHero} min-h-[100vh] px-16 py-5`}>
                <nav className="flex justify-between items-center">
                   <div className={`flex gap-3 items-center text-white text-3xl font-sans`}>
-                     <IoLogoMicrosoft size={45} color="white" className={`${styles.logo} rounded-[50rem]`} />
+                     <IoLogoMicrosoft size={45} color="white" className={`${styles.logo} rounded-[50rem] cursor-pointer`} />
                      <h1 className={`${styles.textShadow}`}>Real Estimate</h1>
                   </div>
                   <div className="navList flex items-center">
-                     <ul className="flex gap-20 text-white items-center mt-2">
+                     <ul className="flex gap-16 text-white items-center mt-2">
                         <li className={`${styles.textShadow}`}>About us</li>
                         <li className={`${styles.textShadow}`}>For Agents</li>
+                        <li className={`${styles.textShadow}`}>Get Estimates</li>
                      </ul>
+                  </div>
+                  <div className={`hambugger hidden`}>
+                     <GiHamburgerMenu size={35} color="white" className={`cursor-pointer`}/>
                   </div>
                </nav>
 
@@ -33,7 +38,7 @@ export default function Home() {
                </div>
 
             </header>
-            <div className={`${styles.trademark} bg-slate-900 w-[100%]`}>
+            <div className={`${styles.trademark} text-white text-sm p-3 pl-16 bg-slate-900 w-[100%]`}>
                <p>Introducing Simple SaleTM by HomeLight - Learn more »</p>
             </div>
          </MainComponentWrapper>

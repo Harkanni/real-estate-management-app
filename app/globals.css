@@ -14,6 +14,18 @@
    box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+   header {
+      padding: 1.5rem !important;
+   }
+   .navList {
+      display: none;
+   }
+   .hamburger {
+      display: block;
+   }
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

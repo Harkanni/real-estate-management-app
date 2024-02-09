@@ -19,5 +19,9 @@
 }
 
 .trademark {
-   transform: translateY(-2rem);
+   transform: translateY(-2.1rem);
+   /* display: none; */
 }
+
+
+
