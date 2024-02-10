@@ -43,6 +43,7 @@ export default function Home() {
             <div className={`${styles.trademark} text-white text-sm p-3 pl-16 bg-slate-900 w-[100%]`}>
                <p>Introducing Simple SaleTM by HomeLight - Learn more »</p>
             </div>
+            
          </MainComponentWrapper>
          <Image
             src={Evaluations[0].imgUrl}
