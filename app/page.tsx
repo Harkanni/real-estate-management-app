@@ -7,6 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Button } from "@mui/material";
 
 import { Evaluations } from '@/constants/index'
+import EvaluationComponent from "@/components/EvaluationComponent";
 
 export default function Home() {
    return (
@@ -43,12 +44,10 @@ export default function Home() {
             <div className={`${styles.trademark} text-white text-sm p-3 pl-16 bg-slate-900 w-[100%]`}>
                <p>Introducing Simple SaleTM by HomeLight - Learn more »</p>
             </div>
+
+            <EvaluationComponent  />
             
          </MainComponentWrapper>
-         <Image
-            src={Evaluations[0].imgUrl}
-            alt=""
-         />
       </main>
    );
 }
