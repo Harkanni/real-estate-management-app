@@ -9,21 +9,23 @@
 }
 
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
+.font-open {
+  font-family: 'Open Sans', 'San Francisco', '-apple-system', 'HelveticaNeue',
+    helvetica, roboto, droid serif, arial, sans-serif;
+}
 
 @media screen and (max-width: 768px) {
-   header {
-      padding: 1.5rem !important;
-      height: 41rem !important;
-      /* display: none; */
-   }   
+  header {
+    padding: 1.5rem !important;
+    height: 41rem !important;
+    /* display: none; */
+  }
 }
-
 
 /* @media (prefers-color-scheme: dark) {
   :root {

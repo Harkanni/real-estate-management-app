@@ -11,11 +11,11 @@ const EvaluationComponent = () => {
          {
             Evaluations.map((item, index) => {
                return (
-                  <div className={`flex gap-4 mt-5 px-16 py-5`}>
-                     <div className={`flex flex-col gap-6 w-[50%]`}>
-                        <h1>{item.title}</h1>
-                        <p>{item.details}</p>
-                        <Button variant="contained" color="primary" className={`${styles.button} bg-black`}>Estimate</Button>
+                  <div className={`${index+1 >=2 ? 'flex flex-row-reverse' : 'flex'} justify-between font-open gap-4 mt-10 px-16 py-5`}>
+                     <div className={`flex flex-col gap-6 w-[50%] max-w-[30rem]`}>
+                        <h1 className={`font-extrabold text-3xl`}>{item.title}</h1>
+                        <p className='leading-8 font-[400]'>{item.details}</p>
+                        <Button variant="contained" color="primary" className={`${styles.EVbutton} bg-black w-[70px] px-[50rem]`}>Estimate</Button>
                      </div>
 
                      <div className={`flex w-[50%]`}>

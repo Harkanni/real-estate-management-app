@@ -19,6 +19,11 @@
    padding-block: .8rem;
 }
 
+.EVbutton {
+   padding-inline: 5rem;
+   padding-block: .8rem;
+}
+
 .textInput {
    outline: none;   
 }
