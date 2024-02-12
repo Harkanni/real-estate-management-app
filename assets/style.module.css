@@ -61,6 +61,18 @@
    .navList {
       display: none;
    }
+   .evalDiv {
+      flex-wrap: wrap;
+      display: flex;
+   }
+   .evalDiv .evalDesc {
+      width: 100% !important;
+   }
+   .evalDiv .evalImg {
+      display: flex !important;
+      flex: 1;
+      margin-top: 3rem;
+   }
 }
 
 @media screen and (min-width: 760px) {
