@@ -1,4 +1,5 @@
 import { image1, image2 } from '@/assets/';
+import { FaCircleCheck } from "react-icons/fa6";
 
 export const Evaluations = [
   {
@@ -15,3 +16,30 @@ export const Evaluations = [
     imgUrl: image2
   }
 ];
+
+export const comparisons = [
+   {
+      label: '',
+      desc: '',
+      calc: 'Online Tools',
+      agents: 'Top Agents',
+   },
+   {
+      label: 'Publicly Available Data',
+      desc: 'Compile tax records and assessments with other data sources.',
+      calc: <FaCircleCheck stroke='black' fill='#c5c8cd' size={25} color='black'/>,
+      agents: <FaCircleCheck stroke='black' size={25} color='black'/>
+   },
+   {
+      label: 'Recent Sales History',
+      desc: "Combine the home's last sale price with current market price.",
+      calc: <FaCircleCheck stroke='black' fill='#c5c8cd' size={25} color='black'/>,
+      agents: <FaCircleCheck stroke='black' size={25} color='black'/>
+   },
+   {
+      label: 'Comparable Market Analysis',
+      desc: 'Look at recent sales records for other properties in the same neighborhood.',
+      calc: <FaCircleCheck stroke='black' fill='#c5c8cd' size={25} color='black'/>,
+      agents: <FaCircleCheck stroke='black' size={25} color='black'/>
+   },
+]

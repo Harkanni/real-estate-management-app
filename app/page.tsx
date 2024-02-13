@@ -9,6 +9,7 @@ import { Button } from "@mui/material";
 import { Evaluations } from '@/constants/index'
 import EvaluationComponent from "@/components/EvaluationComponent";
 import HomeValueEstimateInfo from "@/components/HomeValueEstimateInfo";
+import Comparison from "@/components/Comparison";
 
 export default function Home() {
    return (
@@ -49,6 +50,8 @@ export default function Home() {
             <EvaluationComponent  />
 
             <HomeValueEstimateInfo />
+
+            <Comparison />
             
          </MainComponentWrapper>
       </main>
