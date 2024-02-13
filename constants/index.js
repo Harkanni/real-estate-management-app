@@ -17,7 +17,7 @@ export const Evaluations = [
   }
 ];
 
-export const comparisons = [
+export const Comparisons = [
    {
       label: '',
       desc: '',

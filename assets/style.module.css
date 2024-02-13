@@ -33,6 +33,11 @@
    /* display: none; */
 }
 
+.keypoint, .comparison {
+   display: inline-block;
+}
+
+
 @media screen and (max-width: 768px) {
    .banner {
       width: 90vw !important;
