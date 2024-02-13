@@ -42,4 +42,28 @@ export const Comparisons = [
       calc: <FaCircleCheck stroke='black' fill='#c5c8cd' size={25} color='black'/>,
       agents: <FaCircleCheck stroke='black' size={25} color='black'/>
    },
+   {
+      label: 'Knowledge of the Area',
+      desc: "Nearby schools, trendy restaurants, and the next door neighbor's dog all come into play.",
+      calc: '',
+      agents: <FaCircleCheck stroke='black' size={25} color='black'/>
+   },
+   {
+      label: 'Characteristics & Condition',
+      desc: 'A thorough property inspection is done to note any problem or home improvements that may impact the value.',
+      calc: '',
+      agents: <FaCircleCheck stroke='black' size={25} color='black'/>
+   },
+   {
+      label: 'Buyer Preferences',
+      desc: 'Agents regularly work with buyers and learn the current housing tastes.',
+      calc: '',
+      agents: <FaCircleCheck stroke='black' size={25} color='black'/>
+   },
+   {
+      label: 'Local Market Conditions',
+      desc: 'Working in the same neighborhood all year gives agents perspective on local trends.',
+      calc: '',
+      agents: <FaCircleCheck stroke='black' size={25} color='black'/>
+   },
 ]

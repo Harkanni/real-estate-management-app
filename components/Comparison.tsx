@@ -5,7 +5,7 @@ import styles from '@/assets/style.module.css'
 
 const Comparison = () => {
   return (
-    <section className='p-16'>
+    <section className='px-16'>
       <ul>
          {
             Comparisons.map((item, index) => {
