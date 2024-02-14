@@ -11,6 +11,7 @@ import EvaluationComponent from "@/components/EvaluationComponent";
 import HomeValueEstimateInfo from "@/components/HomeValueEstimateInfo";
 import Comparison from "@/components/Comparison";
 import FrequentlyAskedQuestion from "@/components/FrequentlyAskedQuestion";
+import AccordionWrapper from "@/components/AccordionWrapper";
 
 export default function Home() {
    return (
@@ -54,7 +55,9 @@ export default function Home() {
 
             <Comparison />
 
-            <FrequentlyAskedQuestion />
+            {/* <FrequentlyAskedQuestion /> */}
+
+            <AccordionWrapper />
             
          </MainComponentWrapper>
       </main>
