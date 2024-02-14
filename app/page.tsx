@@ -10,6 +10,7 @@ import { Evaluations } from '@/constants/index'
 import EvaluationComponent from "@/components/EvaluationComponent";
 import HomeValueEstimateInfo from "@/components/HomeValueEstimateInfo";
 import Comparison from "@/components/Comparison";
+import FrequentlyAskedQuestion from "@/components/FrequentlyAskedQuestion";
 
 export default function Home() {
    return (
@@ -52,6 +53,8 @@ export default function Home() {
             <HomeValueEstimateInfo />
 
             <Comparison />
+
+            <FrequentlyAskedQuestion />
             
          </MainComponentWrapper>
       </main>

@@ -23,6 +23,13 @@ body {
     helvetica, roboto, droid serif, arial, sans-serif;
 }
 
+.MuiButtonBase-root, .MuiAccordionSummary-root,
+.MuiAccordionSummary-gutters,
+ .css-y4wgv1-MuiButtonBase-root-MuiAccordionSummary-root {
+   background: transparent;
+   flex-direction: row;
+ }
+
 @media screen and (max-width: 768px) {
   header {
     padding: 1.5rem !important;
