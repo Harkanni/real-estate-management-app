@@ -7,14 +7,22 @@ const AccordionItem = ({ open, toggle, title, desc }:any) => {
    return (
       <div className='border-b-2'>
          <div className='bg-white py-2 flex justify-between items-center cursor-pointer' onClick={toggle}>
-            <p className='font-semibold'>{title}</p>
+            <p className='font-semibold my-3'>{title}</p>
             <div>
                {open ? <AiOutlineMinus /> : <AiOutlinePlus />}
             </div>
          </div>
 
          <Collapse isOpened={open} >
-            <div className='pb-2'>{desc}</div>
+            <div className='pb-2'>
+               {
+                  desc.map((text: string) => {
+                     return (
+                        <p className='mb-4 leading-8'>{text}</p>
+                     )
+                  })
+               }
+            </div>
          </Collapse>
       </div>
    )
