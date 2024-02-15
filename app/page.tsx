@@ -12,6 +12,7 @@ import HomeValueEstimateInfo from "@/components/HomeValueEstimateInfo";
 import Comparison from "@/components/Comparison";
 import FrequentlyAskedQuestion from "@/components/FrequentlyAskedQuestion";
 import AccordionWrapper from "@/components/AccordionWrapper";
+import LetsTalkComponent from "@/components/LetsTalkComponent";
 
 export default function Home() {
    return (
@@ -58,6 +59,8 @@ export default function Home() {
             {/* <FrequentlyAskedQuestion /> */}
 
             <AccordionWrapper />
+
+            <LetsTalkComponent />
             
          </MainComponentWrapper>
       </main>
