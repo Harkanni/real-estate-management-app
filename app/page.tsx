@@ -13,6 +13,7 @@ import Comparison from "@/components/Comparison";
 import FrequentlyAskedQuestion from "@/components/FrequentlyAskedQuestion";
 import AccordionWrapper from "@/components/AccordionWrapper";
 import LetsTalkComponent from "@/components/LetsTalkComponent";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
    return (
@@ -61,6 +62,8 @@ export default function Home() {
             <AccordionWrapper />
 
             <LetsTalkComponent />
+
+            <Testimonials />
             
          </MainComponentWrapper>
       </main>
