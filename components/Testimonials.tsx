@@ -6,7 +6,7 @@ const Testimonials = () => {
    <section className={`p-16 my-5`}>
       <h2 className='mb-14 text-center text-4xl font-semibold'>What our clients say</h2>
       <div className={`text-center`}>
-         <span className='text-4xl font-thin text-[#18a0f8]' style={{ verticalAlign: 'middle'}}>4.8</span>
+         <span className='text-5xl font-thin text-[#18a0f8]' style={{ verticalAlign: 'middle'}}>4.8</span>
 
          <span className={`inline-flex justify-center items-center mx-1`} >
             { 
