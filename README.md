@@ -1,4 +1,12 @@
+# Real Estimator
+
 ![Real Estimator](./assets/images/header-ss.png)
+
+Find out what your home is really worth
+
+![Real Estimator](./assets/images/body-ss.png)
+
+![Real Estimator](./assets/images/full-ss.png)
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
