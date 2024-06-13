@@ -16,9 +16,9 @@ const AccordionItem = ({ open, toggle, title, desc }:any) => {
          <Collapse isOpened={open} >
             <div className='pb-2'>
                {
-                  desc.map((text: string) => {
+                  desc.map((text: string, index:number) => {
                      return (
-                        <p className='mb-4 leading-8'>{text}</p>
+                        <p key={index} className='mb-4 leading-8'>{text}</p>
                      )
                   })
                }
