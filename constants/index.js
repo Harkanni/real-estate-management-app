@@ -1,4 +1,4 @@
-import { image1, image2 } from '@/assets/';
+import { image1, image2, brian_r, greg_d, kate_g, lance_m, mark_a, william_s } from '@/public/';
 import { FaCircleCheck } from 'react-icons/fa6';
 
 export const Evaluations = [
@@ -114,3 +114,45 @@ export const AccordionData = [
    desc: [`After you receive your estimate, we recommend connecting with a top real estate agent who will conduct a comparative market analysis on your behalf to lock in a pricing strategy. With an estimate in hand, you can also calculate the cost of selling your home and find out the net proceeds of the sale.`]
   },
 ];
+
+export const testimonials = [
+   {
+     name: 'Mark A.',
+     location: 'San Ramon, CA',
+     image: mark_a,
+     quote: 'HomeLight staff was polite, friendly and considerate.',
+   },
+   {
+     name: 'Lance M.',
+     location: 'Austin, TX',
+     image: lance_m,
+     quote: 'Very professional and quick service!',
+   },
+   {
+     name: 'William S.',
+     location: 'Chicago, IL',
+     image: william_s,
+     quote: 'I sold my home in days thanks to HomeLight.',
+   },
+   {
+     name: 'Brian R.',
+     location: 'San Ramon, CA',
+     image: brian_r,
+     quote: 'HomeLight staff was polite, friendly and considerate.',
+   },
+   {
+     name: 'Greg D.',
+     location: 'Austin, TX',
+     image: greg_d,
+     quote: 'Very professional and quick service!',
+   },
+   {
+     name: 'Kate G.',
+     location: 'Chicago, IL',
+     image: kate_g,
+     quote: 'I sold my home in days thanks to HomeLight.',
+   },
+   // Add more objects up to 9
+ ];
+ 
+ 

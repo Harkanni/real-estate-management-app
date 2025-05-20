@@ -1,7 +1,7 @@
 import MainComponentWrapper from "@/components/MainComponentWrapper";
-import { hero } from '@/assets'
+import { hero } from '@/public'
 import Image from "next/image";
-import styles from '@/assets/style.module.css'
+import styles from '@/public/style.module.css'
 import { IoLogoMicrosoft } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Button } from "@mui/material";

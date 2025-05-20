@@ -1,7 +1,7 @@
 import { Comparisons } from '@/constants';
 import React from 'react'
 import { FaCircleCheck } from "react-icons/fa6";
-import styles from '@/assets/style.module.css'
+import styles from '@/public/style.module.css'
 
 const Comparison = () => {
   return (

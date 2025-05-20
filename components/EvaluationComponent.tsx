@@ -3,7 +3,7 @@ import { Evaluations } from '@/constants'
 import Image from 'next/image'
 
 import { Button } from "@mui/material";
-import styles from '@/assets/style.module.css'
+import styles from '@/public/style.module.css'
 
 const EvaluationComponent = () => {
    return (
@@ -11,7 +11,7 @@ const EvaluationComponent = () => {
          {
             Evaluations.map((item, index) => {
                return (
-                  <div className={` ${styles.evalDiv}  ${index+1 >=2 ? 'flex flex-row-reverse' : 'flex'} justify-between font-open gap-4 mt-10 px-16 py-5`}>
+                  <div key={index} className={` ${styles.evalDiv}  ${index+1 >=2 ? 'flex flex-row-reverse' : 'flex'} justify-between font-open gap-4 mt-10 px-16 py-5`}>
                      <div className={`${styles.evalDesc} flex flex-col gap-6 w-[50%]`}>
                         <h1 className={`font-extrabold text-3xl`}>{item.title}</h1>
                         <p className='leading-8 font-[400]'>{item.details}</p>

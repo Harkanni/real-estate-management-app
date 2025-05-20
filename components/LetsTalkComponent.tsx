@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '@/assets/style.module.css'
-import { image3 } from '@/assets'
+import styles from '@/public/style.module.css'
+import { image3 } from '@/public'
 import Image from 'next/image'
 
 const LetsTalkComponent = () => {
