@@ -14,6 +14,14 @@ import FrequentlyAskedQuestion from "@/components/FrequentlyAskedQuestion";
 import AccordionWrapper from "@/components/AccordionWrapper";
 import LetsTalkComponent from "@/components/LetsTalkComponent";
 import Testimonials from "@/components/Testimonials";
+import TopRealEstateAgents from "@/components/TopRealEstateAgents";
+import RealEstateAgentsInMajorCities from "@/components/RealEstateAgentsInMajorCities";
+import RealEstateAgentsByState from "@/components/RealEstateAgentsByState";
+import HomeForSaleByCity from "@/components/HomeForSaleByCity";
+import HomeForSaleByState from "@/components/HomeForSaleByState";
+import BuyersAndSellers from "@/components/BuyersAndSellers";
+import AgentsAndLenders from "@/components/AgentsAndLenders";
+import Company from "@/components/Company";
 
 export default function Home() {
    return (
@@ -51,7 +59,7 @@ export default function Home() {
                <p>Introducing Simple SaleTM by HomeLight - Learn more »</p>
             </div>
 
-            <EvaluationComponent  />
+            <EvaluationComponent />
 
             <HomeValueEstimateInfo />
 
@@ -64,7 +72,31 @@ export default function Home() {
             <LetsTalkComponent />
 
             <Testimonials />
-            
+
+            <div className="bg-[#273653] p-2 w-full min-h-72 flex flex-col items-center justify-center">
+               {/* <h2 className="text-[#fff] font-bold text-4xl">Check your home value in 2 minutes</h2> */}
+               {/* <div className={`${styles.banner} mt-20 w-[51%] h`}> */}
+               <h1 className={`${styles.textShadow} text-white text-2xl md:text-4xl leading-[3rem] font-bold`}>Check your home value in 2 minutes</h1>
+               <div className={`p-2 pl-5 flex justify-between gap-1 bg-white rounded-lg mt-7 mb-5 max-w-[40rem] w-full`}>
+                  <input className={`${styles.textInput} flex-1 placeholder:hidden`} type="text" placeholder="Enter your address" />
+                  <Button variant="contained" color="primary" className={`${styles.button} bg-black`}>Estimate</Button>
+               </div>
+               <p className={`${styles.textShadow} text-white hidden sm:block`}>Get a real-world home value estimate in less than 2 minutes.</p>
+               {/* </div> */}
+            </div>
+
+            <TopRealEstateAgents>
+               <RealEstateAgentsInMajorCities />
+               <RealEstateAgentsByState />
+               <HomeForSaleByCity />
+               <HomeForSaleByState />
+               <section className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-5 text-sm text-blue-900">
+                  <BuyersAndSellers />
+                  <AgentsAndLenders />
+                  <Company />
+               </section>
+            </TopRealEstateAgents>
+
          </MainComponentWrapper>
       </main>
    );
