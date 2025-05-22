@@ -972,6 +972,7 @@ export const home_For_sale_by_state = [
 ];
 
 export const for_buyers_and_sellers = [
+  { url: '', text: "Buyers" },
   { url: '/find-real-estate-agents/buying', text: "Find a Buyer's Agent" },
   { url: '/homes', text: 'Find Homes for Sale' },
   {
@@ -980,6 +981,7 @@ export const for_buyers_and_sellers = [
   },
   { url: '/down-payment-calculator', text: 'Down Payment Calculator' },
   { url: '/blog/buy/', text: 'Buyer Resource Center' },
+  { url: '', text: 'Seller' },
   { url: '/find-real-estate-agents', text: 'Find a Listing Agent' },
   { url: '/buy-before-you-sell', text: 'HomeLight Buy Before You Sell' },
   { url: '/simple', text: 'Simple Sale' },
@@ -990,6 +992,7 @@ export const for_buyers_and_sellers = [
 ];
 
 export const for_agents_And_lenders = [
+  { url: '', text: 'Agents' },
   { url: '/agents', text: 'Sign up to be an agent partner' },
   {
     url: 'https://agent.homelight.com/trade-in-submission',
@@ -998,6 +1001,7 @@ export const for_agents_And_lenders = [
   { url: '/blog/agents/', text: 'Agent Resource Center' },
   { url: 'https://help.homelight.com', text: 'Agent Help Center' },
   { url: 'http://homelight.com/marketing', text: 'Agent Marketing Toolkit' },
+  { url: '', text: 'Lenders' },
   {
     url: 'http://lender.homelight.com/',
     text: 'Sign up to be a Lender partner'
