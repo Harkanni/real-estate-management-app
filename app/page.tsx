@@ -23,12 +23,13 @@ import BuyersAndSellers from "@/components/BuyersAndSellers";
 import AgentsAndLenders from "@/components/AgentsAndLenders";
 import Company from "@/components/Company";
 import Footer from "@/components/Footer";
+import HeaderComponent from "@/components/HeaderComponent";
 
 export default function Home() {
    return (
       <main className="min-h-screen">
          <MainComponentWrapper>
-            <header className={`${styles.bgHero} h-[100vh] px-16 py-5`}>
+            {/* <header className={`${styles.bgHero} h-[100vh] px-16 py-5`}>
                <nav className="flex justify-between items-center">
                   <div className={`flex gap-3 items-center text-white text-3xl font-sans`}>
                      <IoLogoMicrosoft size={45} color="white" className={`${styles.logo} rounded-[50rem] cursor-pointer`} />
@@ -55,7 +56,8 @@ export default function Home() {
                   <p className={`${styles.textShadow} text-white`}>Get a real-world home value estimate in less than 2 minutes.</p>
                </div>
 
-            </header>
+            </header> */}
+            <HeaderComponent />
             <div className={`${styles.trademark} text-white text-sm p-3 pl-16 bg-slate-900 w-[100%]`}>
                <p>Introducing Simple SaleTM by HomeLight - Learn more »</p>
             </div>
