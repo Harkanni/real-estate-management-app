@@ -11,12 +11,12 @@ import CarouselTestimonialItem from './CarouselTestimonialItem';
 
 const Testimonials = () => {
    return (
-      <section className={`p-16 my-5 bg-[#f2f8fe]`}>
+      <section className={`p-4 pt-16 sm:p-16 sm:my-5 my-5 bg-[#f2f8fe]`}>
          <h2 className='mb-14 text-center text-4xl font-semibold'>What our clients say</h2>
-         <div className={`text-center`}>
+         <div className={`text-center flex items-center flex-wrap justify-center`}>
             <span className='text-5xl font-thin text-[#18a0f8]' style={{ verticalAlign: 'middle' }}>4.8</span>
 
-            <span className={`inline-flex justify-center items-center mx-1`} >
+            <span className={`inline-flex justify-center items-center mx-1 text-[3rem]`} >
                {
                   [1, 2, 3, 4].map((item, index) => {
                      return (

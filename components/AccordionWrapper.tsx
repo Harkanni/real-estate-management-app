@@ -15,7 +15,7 @@ const AccordionWrapper = () => {
       setOpen(index)
    }
    return (
-      <section className='p-16 my-5'>
+      <section className='p-[1.4rem] sm:p-16 my-5'>
          <h3 className='text-3xl font-extrabold pb-6 border-b-2'>Frequently Asked Questions</h3>
          <div>
             {

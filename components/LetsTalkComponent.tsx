@@ -6,7 +6,7 @@ import Image from 'next/image'
 const LetsTalkComponent = () => {
    return (
       <section>
-         <div className={`${styles.evalDiv} flex justify-between items-center font-open gap-4 mt-10 px-16 py-5`}>
+         <div className={`${styles.evalDiv} flex justify-between items-center font-open gap-4 mt-10 px-[1.4rem] md:px-16 py-5`}>
             <div className={`${styles.evalDesc} flex flex-col gap-6 w-[50%]`}>
                <h1 className={`font-extrabold text-3xl`}>
                   Let’s talk

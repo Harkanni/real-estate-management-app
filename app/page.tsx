@@ -22,6 +22,7 @@ import HomeForSaleByState from "@/components/HomeForSaleByState";
 import BuyersAndSellers from "@/components/BuyersAndSellers";
 import AgentsAndLenders from "@/components/AgentsAndLenders";
 import Company from "@/components/Company";
+import Footer from "@/components/Footer";
 
 export default function Home() {
    return (
@@ -97,6 +98,7 @@ export default function Home() {
                </section>
             </TopRealEstateAgents>
 
+            <Footer />
          </MainComponentWrapper>
       </main>
    );
