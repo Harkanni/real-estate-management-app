@@ -7,6 +7,7 @@ import Menu0 from './Menu0';
 import Menu1 from './Menu1';
 import Menu3 from './Menu3';
 import Menu4 from './Menu4';
+import { BiChevronDown } from 'react-icons/bi';
 
 const StickyNavbarComponent = ({ setIsMenuOpen, isMenuOpen, isSticky }: { setIsMenuOpen: any, isMenuOpen: boolean, isSticky: boolean }) => {
    const [hovering, setHovering] = useState<number | null>(null);
@@ -25,12 +26,30 @@ const StickyNavbarComponent = ({ setIsMenuOpen, isMenuOpen, isSticky }: { setIsM
 
                {/* Desktop Menu */}
                <ul className="hidden lg:flex gap-8 items-center text-[#273653] font-medium relative">
-                  <li onMouseEnter={(event) => { setHovering(0); setPopoverLeft(event.currentTarget.offsetLeft - 330); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:underline"> Buy </li>
-                  <li onMouseEnter={(event) => { setHovering(1); setPopoverLeft(event.currentTarget.offsetLeft - 220); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:underline">Sell</li>
-                  <li onMouseEnter={(event) => { setHovering(2); setPopoverLeft(event.currentTarget.offsetLeft - 200); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:underline">Buy Before You Sell</li>
-                  <li onMouseEnter={(event) => { setHovering(3); setPopoverLeft(event.currentTarget.offsetLeft - 200); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:underline">Agents</li>
-                  <li onMouseEnter={(event) => { setHovering(4); setPopoverLeft(event.currentTarget.offsetLeft - 200); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:underline">Lenders</li>
-                  <li onMouseEnter={(event) => { setHovering(5); setPopoverLeft(event.currentTarget.offsetLeft - 220); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:underline">About Us</li>
+                  <a href='#' onMouseOver={(event) => { setHovering(0); setPopoverLeft(event.currentTarget.offsetLeft - 250); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:no-underline flex gap-2 justify-center items-center text-[color: #273653] font-semibold">
+                     <p>Buy</p>
+                     <i><BiChevronDown size={24} /></i>
+                  </a>
+                  <a href='#' onMouseOver={(event) => { setHovering(1); setPopoverLeft(event.currentTarget.offsetLeft - 220); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:no-underline flex gap-2 justify-center items-center text-[color: #273653] font-semibold">
+                     <p>Sell</p>
+                     <BiChevronDown size={24} />
+                  </a>
+                  <a href='#' onMouseOver={(event) => { setHovering(2); setPopoverLeft(event.currentTarget.offsetLeft - 200); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:no-underline flex gap-2 justify-center items-center text-[color: #273653] font-semibold">
+                     <p>Buy Before You Sell</p>
+                     <BiChevronDown size={24} />
+                  </a>
+                  <a href='#' onMouseOver={(event) => { setHovering(3); setPopoverLeft(event.currentTarget.offsetLeft - 200); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:underline flex gap-2 justify-center items-center text-[color: #273653] font-semibold">
+                     <p>Agents</p>
+                     <BiChevronDown size={24} />
+                  </a>
+                  <a href='#' onMouseOver={(event) => { setHovering(4); setPopoverLeft(event.currentTarget.offsetLeft - 200); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:no-underline flex gap-2 justify-center items-center text-[color: #273653] font-semibold">
+                     <p>Lenders</p>
+                     <BiChevronDown size={24} />
+                  </a>
+                  <a href='#' onMouseOver={(event) => { setHovering(5); setPopoverLeft(event.currentTarget.offsetLeft - 220); console.log(event.currentTarget.offsetLeft) }} className="cursor-pointer hover:no-underline flex gap-2 justify-center items-center text-[color: #273653] font-semibold">
+                     <p>About Us</p>
+                     <BiChevronDown size={24} />
+                  </a>
 
                   {typeof hovering === 'number' && (
                      hovering === 0 ? <Menu0 popoverLeft={popoverLeft!} /> :

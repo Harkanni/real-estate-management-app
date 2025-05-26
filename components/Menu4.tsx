@@ -1,4 +1,7 @@
+import { menu3IMG } from '@/public'
+import Image from 'next/image'
 import React from 'react'
+import { BsFillTriangleFill } from 'react-icons/bs'
 
 const Menu4 = ({ popoverLeft }: { popoverLeft: number }) => {
    return (
@@ -7,22 +10,23 @@ const Menu4 = ({ popoverLeft }: { popoverLeft: number }) => {
             style={{
                left: `${popoverLeft}px`
             }}
-            className="absolute top-full mt-2 animate-slide-up transition-all bg-transparentg p-0 rounded shadow z-50"
+            className="absolute top-full mt-5 animate-slide-up transition-all bg-transparentg p-0 rounded shadow z-50"
          >
-            <div className="relative w-[990px] shadow-2xl min-h-[300px] bg-white rounded-lg flex overflow-hidden">
-               {/* Top arrow */}
-               {/* <div className="absolute -top-3 left-1/2 -translate-x-1/2  drop-shadow-sm z-[999]">
-                        <BsFillTriangleFill size={24} />
-                     </div> */}
+            <div className="relative w-[700px] shadow-2xl min-h-[300px] bg-white rounded-lg flex">
+               {/* Triangle */}
+               <div className="absolute -top-[0.9rem] left-[14rem] z-[999]">
+                  <BsFillTriangleFill className="#eff6ff" size={24} color='#eff6ff' />
+               </div>
 
                {/* Content */}
                <div className="flex w-full">
                   {/* Left Side */}
                   <div className="bg-blue-50 p-6 flex flex-col items-center justify-center w-1/2">
-                     <img
-                        src="https://cdn-icons-png.flaticon.com/512/619/619034.png"
+                     <Image
+                        src={menu3IMG}
                         alt="House"
-                        className="w-24 h-24 mb-4"
+                        className="mb-4"
+                        // className="w-24 h-24 mb-4"
                      />
                      <h3 className="text-lg font-semibold text-[#273653] text-center">
                         Learn More about Buy Before You Sell

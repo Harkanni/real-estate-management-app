@@ -1,3 +1,5 @@
+import { menu0IMG } from '@/public'
+import Image from 'next/image'
 import React from 'react'
 import { BsFillTriangleFill } from 'react-icons/bs'
 
@@ -8,22 +10,23 @@ const Menu0 = ({ popoverLeft }: { popoverLeft: number }) => {
             style={{
                left: `${popoverLeft}px`
             }}
-            className="absolute top-full mt-2 animate-slide-up transition-all bg-transparentg p-0 rounded shadow z-50"
+            className="absolute top-full mt-4 animate-slide-up transition-all bg-transparentg p-0 rounded shadow z-50"
          >
             <div className="relative w-[1120px] shadow-2xl min-h-[300px] bg-white rounded-lg flex">
                {/* Triangle */}
-               <div className="absolute -top-3 left-[20.8rem] z-[999]">
+               <div className="absolute -top-3 left-[16rem] z-[999]">
                   <BsFillTriangleFill className="#eff6ff" size={24} color='#eff6ff' />
                </div>
 
                {/* Main content */}
-               <div className="flex w-full divide-x divide-gray-200">
+               <div className="flex w-full bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
                   {/* Left Section */}
-                  <div className="bg-blue-50 p-6 flex flex-col items-center justify-center w-[35%]">
-                     <img
-                        src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+                  <div className="bg-blue-50 p-6 flex flex-col items-center justify-center w-[35%] border-r border-gray-200">
+                     <Image
+                        src={menu0IMG}
                         alt="Buying Home"
-                        className="w-[100%] h-full mb-4"
+                        className="mb-4"
+                        // className="w-full h-full mb-4"
                      />
                      <h3 className="text-lg font-semibold text-[#273653] text-center">
                         Buying a house?
@@ -37,11 +40,11 @@ const Menu0 = ({ popoverLeft }: { popoverLeft: number }) => {
                   </div>
 
                   {/* Right Section (3 columns) */}
-                  <div className="p-6 w-[65%] grid grid-cols-3 gap-6">
+                  <div className="p-6 w-[65%] grid grid-cols-3 divide-x divide-gray-200">
                      {/* Column 1 */}
-                     <div>
+                     <div className="pr-6">
                         <h4 className="font-bold mb-5 text-[#273653]">Buying with an agent</h4>
-                        <ul className="space-y-10 text-blue-600 font-bold text-sm">
+                        <ul className="space-y-9 text-blue-600 font-semibold text-[0.88rem]">
                            <li><a href="#">Find a buyer's agent</a></li>
                            <li><a href="#">What is a buyer's agent?</a></li>
                            <li><a href="#">How to choose a buyer's agent?</a></li>
@@ -50,9 +53,9 @@ const Menu0 = ({ popoverLeft }: { popoverLeft: number }) => {
                      </div>
 
                      {/* Column 2 */}
-                     <div>
+                     <div className="px-6">
                         <h4 className="font-bold mb-5 text-[#273653]">First-time buyers</h4>
-                        <ul className="space-y-10 text-blue-600 font-bold text-sm">
+                        <ul className="space-y-9 text-blue-600 font-semibold text-[0.88rem]">
                            <li><a href="#">First-time homebuyer tips</a></li>
                            <li><a href="#">First-time homebuyer programs</a></li>
                            <li><a href="#">How much home can I afford?</a></li>
@@ -61,9 +64,9 @@ const Menu0 = ({ popoverLeft }: { popoverLeft: number }) => {
                      </div>
 
                      {/* Column 3 */}
-                     <div>
+                     <div className="pl-6">
                         <h4 className="font-bold mb-5 text-[#273653]">Buyer resources</h4>
-                        <ul className="space-y-10 text-blue-600 font-bold text-sm">
+                        <ul className="space-y-9 text-blue-600 font-semibold text-[0.88rem]">
                            <li><a href="#">Down payment calculator</a></li>
                            <li><a href="#">Closing costs calculator</a></li>
                            <li><a href="#">Buy before you sell</a></li>
@@ -75,6 +78,7 @@ const Menu0 = ({ popoverLeft }: { popoverLeft: number }) => {
                      </div>
                   </div>
                </div>
+
             </div>
          </div>
       </>
