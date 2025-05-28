@@ -9,7 +9,7 @@ import Menu3 from './Menu3';
 import Menu4 from './Menu4';
 import { BiChevronDown } from 'react-icons/bi';
 
-const StickyNavbarComponent = ({ setIsMenuOpen, isMenuOpen, isSticky }: { setIsMenuOpen: any, isMenuOpen: boolean, isSticky: boolean }) => {
+const StickyNavbarComponent = ({ setIsMenuOpen, isMenuOpen, isSticky, isVisible }: { setIsMenuOpen?: any, isMenuOpen?: boolean, isSticky?: boolean, isVisible?: boolean }) => {
    const [hovering, setHovering] = useState<number | null>(null);
    const [popoverLeft, setPopoverLeft] = useState<number | null>(null);
    const [popoverHeight, setPopoverHeight] = useState<number | null>(null);
@@ -66,7 +66,7 @@ const StickyNavbarComponent = ({ setIsMenuOpen, isMenuOpen, isSticky }: { setIsM
                </ul>
 
                {/* Sign In button (Desktop) */}
-               <a href="/signin" className="hidden lg:inline text-[#18a0f8] font-medium border border-[#18a0f8] rounded px-4 py-2 hover:bg-[#18a0f8] hover:text-white transition">
+               <a href="../client/sign-in" className="hidden lg:inline text-[#18a0f8] font-medium border border-[#18a0f8] rounded px-4 py-2 hover:bg-[#18a0f8] hover:text-white transition">
                   Sign In
                </a>
 
