@@ -20,7 +20,6 @@ const page = () => {
                         <IoLogoMicrosoft size={35} color="#273653" className="rounded-full cursor-pointer" />
                         <span className="text-xl font-semibold text-[#273653]">Real Estimate</span>
                      </div>
-
                   </div>
                </nav>
 
